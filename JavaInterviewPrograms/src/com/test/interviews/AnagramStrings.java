@@ -17,10 +17,20 @@ public class AnagramStrings {
 			Arrays.sort(c2);
 			status = Arrays.equals(c1, c2);			
 		}
+		
+		if(status) {
+			System.out.println("The Strings "+str1+" and "+str2+" are Anagram");
+		} else {
+			System.out.println("The Strings "+str1+" and "+str2+" are NOT Anagram");
+		}
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		isAnagram("keep","peek");
+		isAnagram("India","Outda");
+		isAnagram("wow","oww");
+		isAnagram("motherinlaw","hitlerwoman");
 
 	}
 
